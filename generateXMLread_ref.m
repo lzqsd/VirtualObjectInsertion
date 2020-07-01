@@ -160,7 +160,7 @@ system(cmd );
 
 %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%% Compute the our method %%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% Compute our method %%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Render the image and get the difference
 envMatName = strrep(envName, '.npz', '.mat');
@@ -217,65 +217,6 @@ ldr = hdr.^(1.0/2.2);
 ldrNew = hdrNew.^(1.0/2.2);
 imwrite(ldrNew, newName);
 
-
-%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%% Compute the our method %%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Render the image and get the difference
-envMatName = strrep(envName, '.npz', '.mat');
-env = load(envMatName ); env = env.env;
-envOrigName = strrep(envMatName, '.mat', 'Origin.mat' );
-envOrig = load(envOrigName ); envOrig = envOrig.env;
-env = flip(env, 3);
-envOrig = flip(envOrig, 3 );
-hdrwrite(max(env, 0), strrep(envMatName, 'mat', 'hdr') );
-
-%% Run the rendering 
-xmlFile1 = 'scene.xml';
-xmlFile2 = strrep(xmlFile1, '.xml', '_obj.xml');
-xmlFile3 = strrep(xmlFile1, '.xml', '_bkg.xml');
-output1 = strrep(xmlFile1, '.xml', '.rgbe');
-output2 = strrep(xmlFile2, '.xml', '.rgbe');
-output3 = strrep(xmlFile3, '.xml', '.rgbe');
-
-cmd1 = sprintf('%s -f %s -o %s -m %d', renderer, xmlFile1, output1, 0);
-cmd3 = sprintf('%s -f %s -o %s -m %d', renderer, xmlFile3, output3, 0);
-cmd1_mask = sprintf('%s -f %s -o %s -m %d', renderer, xmlFile1, output1, 4);
-cmd2_mask = sprintf('%s -f %s -o %s -m %d', renderer, xmlFile2, output2, 4);
-system(cmd1 ); system(cmd3 );
-system(cmd1_mask ); system(cmd2_mask );
-
-%% Get the difference and add to the image
-hdr1 = hdrread(strrep(output1, '.rgbe', '_1.rgbe') );
-hdr2 = hdrread(strrep(output3, '.rgbe', '_1.rgbe') );
-mask1 = imread(strrep(output1, '.rgbe', 'mask_1.png') );
-mask2 = imread(strrep(output2, '.rgbe', 'mask_1.png') );
-mask1 = single(mask1 ) / 255.0;
-mask2 = single(mask2 ) / 255.0;
-maskBg = max(mask1 - mask2, 0 );
-diff = max(hdr1, 1e-10) ./ max(hdr2, 1e-10) .* maskBg;
-diff = min(diff * 1.01, 1);
-system(sprintf('rm %s', strrep(output1, '.rgbe', '_1.rgbe') ) );
-system(sprintf('rm %s', strrep(output3, '.rgbe', '_1.rgbe') ) );
-system(sprintf('rm %s', strrep(output1, '.rgbe', 'mask_1.png') ) );
-system(sprintf('rm %s', strrep(output2, '.rgbe', 'mask_1.png') ) );
-
-newName = strrep(originName, suffix, ['_new', suffix]);
-ldr = single(imread( originName ) ) / 255.0;
-ldr = max(imresize(ldr, [height, width] ), 0);
-hdr = ldr .^ (2.2);
-
-mask1 = mask1 == 1;
-mask1 = imerode(mask1, strel('disk', 1)); 
-
-hdrNew = hdr .* (1-mask1) + (hdr .* diff) .* mask1;
-hdrNew = hdr1 .* mask2 + hdrNew .* (1 - mask2);
-hdrNew = max(hdrNew, 0);
-hdrwrite(hdrNew,  newName );
-ldr = hdr.^(1.0/2.2);
-ldrNew = hdrNew.^(1.0/2.2);
-imwrite(ldrNew, newName);
 
 clear xobj yobj x y scale vnSelected
 
