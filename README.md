@@ -22,5 +22,5 @@ Please download the data from the [link](http://cseweb.ucsd.edu/~viscomp/project
 
 ## Instructions
 To reproduce the 20 object insertion results from Garon et al. 2019 dataset.
-* Download the inverse rendering prediction from the [link](http://cseweb.ucsd.edu/~viscomp/projects/CVPR20InverseIndoor/objectInsertion.ziphttp://cseweb.ucsd.edu/~viscomp/projects/CVPR20InverseIndoor/objectInsertion_test.zip). Unzip the data in the same directory as the code. 
+* Download the inverse rendering predictions from the [link](http://cseweb.ucsd.edu/~viscomp/projects/CVPR20InverseIndoor/objectInsertion.ziphttp://cseweb.ucsd.edu/~viscomp/projects/CVPR20InverseIndoor/objectInsertion_test.zip). Unzip the data in the same directory as the code. 
 * 
