@@ -10,3 +10,9 @@ The quantitative and qualitative comparisons with prior works on object insertio
 ![](http://cseweb.ucsd.edu/~viscomp/projects/CVPR20InverseIndoor/github/objectInsertion.png)
 ![](http://cseweb.ucsd.edu/~viscomp/projects/CVPR20InverseIndoor/github/quantitative_objectInsertion.png)
 Compared with our networks trained on SUNCG-based dataset, our networks trained on new dataset can predict more consistent lighting color and intensity. Therefore, it achieves better performance in user study. 
+
+# Prerequisites
+To run our code, you may need
+* matlab
+* python 
+* Our optix renderer. This is the an Optix-based GPU renderer implemented mainly in this project. Please find the renderer from this [link](https://github.com/lzqsd/OptixRenderer)
