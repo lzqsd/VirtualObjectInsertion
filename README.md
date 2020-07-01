@@ -37,3 +37,4 @@ We also provide the code to generate the object insertion code from scratch. The
   * `roughness`: The roughness value of the inserted object. The smaller the roughness value, the more specular the object will be. We set roughness value to 0.2 in all our experiments. 
   * `scale`: The size of the inserted object. The size of the inserted object is decided by the size of the plane you selected from the image (will be explained more detailedly in the following) and the scale parameter. 
   * `isNewMask`: Whether to select new plane or not. Sometimes, after selecting the plane, you may find the rendered object too small or too large. In that case, you can set `isNewMask` to be `false` and adjust `scale`, until you get the satisfactory object insertion result.
+* Run `generateXML.m`, you will see an image poped out. Choose 4 points on the image as the plane you select. 
