@@ -9,4 +9,4 @@ The original models were trained by extending the SUNCG dataset with an SVBRDF-m
 The quantitative and qualitative comparisons with prior works on object insertion are shown below. 
 ![](http://cseweb.ucsd.edu/~viscomp/projects/CVPR20InverseIndoor/github/objectInsertion.png)
 ![](http://cseweb.ucsd.edu/~viscomp/projects/CVPR20InverseIndoor/github/quantitative_objectInsertion.png)
-Compare with our networks trained on SUNCG-based dataset, our networks trained on new dataset can predict more consistent lighting color and intensity. Therefore, it achieves better performance in user study. 
+Compared with our networks trained on SUNCG-based dataset, our networks trained on new dataset can predict more consistent lighting color and intensity. Therefore, it achieves better performance in user study. 
