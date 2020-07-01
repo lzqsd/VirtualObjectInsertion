@@ -33,3 +33,7 @@ We also provide the code to generate the object insertion code from scratch. The
 * Open `generateXML.m`. On line 4 and 5, enter the path to your renderer and your python program. 
 * Several parameters from  can be used to adjust the object insertion results
   * `meshNewName`: The mesh used for object insertion. We provide two meshes: `sphere.obj` and `bunny.obj`. You can include your own mesh but you may need to scale and rotate the mesh accordingly so that they will look good. 
+  * `r, g, b`: The diffuse color of the inserted object. We set them all to 0.8 in our experiments. 
+  * `roughness`: The roughness value of the inserted object. The smaller the roughness value, the more specular the object will be. We set roughness value to 0.2 in all our experiments. 
+  * `scale`: The size of the inserted object. The size of the inserted object is decided by the size of the plane you selected from the image (will be explained more detailedly in the following) and the scale parameter. 
+  * `isNewMask`: Whether to select new plane or not. Sometimes, after selecting the plane, you may find the rendered object too small or too large. In that case, you can set `isNewMask` to be `false` and adjust `scale`, until you get the satisfactory object insertion result.
