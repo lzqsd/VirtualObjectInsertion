@@ -42,3 +42,6 @@ We also provide the code to generate the object insertion code from scratch. The
   * After choosing the 4 point, the image will be shown again with a red square polygon demonstrating the plane you selected. Choose a point inside the polygon as the place where you would like to inser the object. 
   * Done, the rendered result is shown below. The image will be saved as `im_new.png` in the `root` directory set on line 3. 
 * If you woild like to insert more objects, just change the `originName` from `im.png` to `im_new.png`. Repeat the process and you can insert multiple objects at different locations of a single image.
+
+## Limitations:
+The current code only supports inserting object on a planar surface. It has not been extended to handle objects in arbitrary 3D geometry yet.
