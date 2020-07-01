@@ -1,7 +1,7 @@
 clear; clc; close; 
 
-renderer = 'CUDA_VISIBLE_DEVICES=2 /media/zhl/1968754e-9801-47b8-a77c-827e693fa4dc/OptixRenderer/src/bin/optixRenderer';
-pythonProgram = '/media/zhl/1968754e-9801-47b8-a77c-827e693fa4dc/anaconda3/bin/python';
+renderer = 'ENTER YOUR RENDERER HERE';
+pythonProgram = 'ENTER YOUR PYTHON PROGRAM HERE';
 for n = 1 : 20
 
 root = ['Example', num2str(n)] ;
