@@ -39,8 +39,11 @@ We also provide the code to generate the object insertion code from scratch. The
   * `isNewMask`: Whether to select new plane or not. Sometimes, after selecting the plane, you may find the rendered object too small or too large. In that case, you can set `isNewMask` to be `false` and adjust `scale`, until you get the satisfactory object insertion result.
 * Run `generateXML.m`:
   * You will see an image poped out. Choose 4 points on the image as the plane you select. An example is shown below.
+  ![](http://cseweb.ucsd.edu/~viscomp/projects/CVPR20InverseIndoor/github/objectInsertion_plane.png)
   * After choosing the 4 point, the image will be shown again with a red square polygon demonstrating the plane you selected. Choose a point inside the polygon as the place where you would like to inser the object. 
+  ![](http://cseweb.ucsd.edu/~viscomp/projects/CVPR20InverseIndoor/github/objectInsertion_point.png)
   * Done, the rendered result is shown below. The image will be saved as `im_new.png` in the `root` directory set on line 3. 
+  ![](http://cseweb.ucsd.edu/~viscomp/projects/CVPR20InverseIndoor/github/objectInsertion_result.png)
 * If you woild like to insert more objects, just change the `originName` from `im.png` to `im_new.png`. Repeat the process and you can insert multiple objects at different locations of a single image.
 
 ## Limitations
