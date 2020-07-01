@@ -43,5 +43,5 @@ We also provide the code to generate the object insertion code from scratch. The
   * Done, the rendered result is shown below. The image will be saved as `im_new.png` in the `root` directory set on line 3. 
 * If you woild like to insert more objects, just change the `originName` from `im.png` to `im_new.png`. Repeat the process and you can insert multiple objects at different locations of a single image.
 
-## Limitations:
-The current code only supports inserting object on a planar surface. It has not been extended to handle objects in arbitrary 3D geometry yet.
+## Limitations
+The current code only supports inserting an object on a planar surface. It has not been extended to handle objects in arbitrary 3D geometry yet.
