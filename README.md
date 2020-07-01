@@ -26,4 +26,9 @@ To reproduce the 20 object insertion results from Garon et al. 2019 dataset.
 * Open `generateXMLread_ref.m`. On line 3 and 4, write down the path to your renderer and your python program. 
 * Run `generateXMLread_ref.m`
 
-It will read the `im_*.mat` files in each `Example*` directory to generate the object insertion results. 
+The program will read the `im_*.mat` files in each `Example*` directory to generate the object insertion results. 
+
+We also provide the code to generate the object insertion code from scratch. The instructions are as follows:
+* Similarly, download the inverse rendering results from this [link](http://cseweb.ucsd.edu/~viscomp/projects/CVPR20InverseIndoor/objectInsertion.ziphttp://cseweb.ucsd.edu/~viscomp/projects/CVPR20InverseIndoor/objectInsertion_test.zip)
+* Open `generateXML.m`. On line 4 and 5, enter the path to your renderer and your python program. 
+* Several parameters from  can be used to adjust the object insertion results
