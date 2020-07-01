@@ -19,3 +19,5 @@ To run our code, you will need
 
 # Data 
 Please download the data from the [link](http://cseweb.ucsd.edu/~viscomp/projects/CVPR20InverseIndoor/objectInsertion.ziphttp://cseweb.ucsd.edu/~viscomp/projects/CVPR20InverseIndoor/objectInsertion.zip). It includes the inverse rendering predictions of the 20 examples from Garon et al. 2019 dataset (Example 1-20) and 4 examples (demo0-3) downloaded from the Internet. 
+
+# Reproduce the Object Insertion Results on Garon et al. 2019 Dataset
