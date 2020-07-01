@@ -15,4 +15,4 @@ Compared with our networks trained on SUNCG-based dataset, our networks trained 
 To run our code, you may need
 * matlab
 * python 
-* Our optix renderer. This is the an Optix-based GPU renderer implemented mainly in this project. Please find the renderer from this [link](https://github.com/lzqsd/OptixRenderer)
+* Optix renderer. This is the an Optix-based GPU renderer implemented mainly in this project. Please find the renderer from this [link](https://github.com/lzqsd/OptixRenderer)
