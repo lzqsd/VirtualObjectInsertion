@@ -23,4 +23,7 @@ Please download the data from the [link](http://cseweb.ucsd.edu/~viscomp/project
 ## Instructions
 To reproduce the 20 object insertion results from Garon et al. 2019 dataset.
 * Download the inverse rendering predictions from the [link](http://cseweb.ucsd.edu/~viscomp/projects/CVPR20InverseIndoor/objectInsertion.ziphttp://cseweb.ucsd.edu/~viscomp/projects/CVPR20InverseIndoor/objectInsertion_test.zip). Unzip the data in the same directory as the code. 
-* 
+* Open `generateXMLread_ref.m`. On line 3 and 4, write down the path to your renderer and your python program. 
+* Run `generateXMLread_ref.m`
+
+It will read the `im_*.mat` files in each `Example*` directory to generate the object insertion results. 
