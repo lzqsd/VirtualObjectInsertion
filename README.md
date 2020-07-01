@@ -18,4 +18,4 @@ To run our code, you will need
 * Renderer. Please find the renderer from this [link](https://github.com/lzqsd/OptixRenderer) This is the an Optix-based GPU renderer implemented for this project.
 
 # Data 
-
+Please download the data from the [link](http://cseweb.ucsd.edu/~viscomp/projects/CVPR20InverseIndoor/objectInsertion.ziphttp://cseweb.ucsd.edu/~viscomp/projects/CVPR20InverseIndoor/objectInsertion.zip). It includes the inverse rendering predictions of the 20 examples from Garon et al. 2019 dataset (Example 1-20) and 4 examples (demo0-3) downloaded from the Internet. 
