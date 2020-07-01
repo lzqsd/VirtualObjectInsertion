@@ -7,8 +7,8 @@ originName = fullfile(root, 'im.png');
 meshNewName = 'sphere.obj';
 r = 0.8; g =0.8; b = 0.8;
 roughness = 0.2;
-isNewMask = true;
 scale = 0.2;
+isNewMask = true;
 
 normalName = fullfile(root, 'normal.png');
 roughnessName = fullfile(root, 'rough.png');
