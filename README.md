@@ -42,7 +42,7 @@ We also provide the code to generate the object insertion code from scratch. The
   ![](http://cseweb.ucsd.edu/~viscomp/projects/CVPR20InverseIndoor/github/objectInsertion_plane.png)
   * After choosing the 4 point, the image will be shown again with a red square polygon demonstrating the plane you selected. Choose a point inside the polygon as the place where you would like to inser the object. 
   ![](http://cseweb.ucsd.edu/~viscomp/projects/CVPR20InverseIndoor/github/objectInsertion_point.png)
-  * Done, the rendered result is shown below. The image will be saved as `im_new.png` in the `root` directory set on line 3. 
+  * Done, the rendered result is shown below. The image will be saved as `im_new.png` in the `root` directory set on line 3.
   ![](http://cseweb.ucsd.edu/~viscomp/projects/CVPR20InverseIndoor/github/objectInsertion_result.png)
 * If you woild like to insert more objects, just change the `originName` from `im.png` to `im_new.png`. Repeat the process and you can insert multiple objects at different locations of a single image.
 
