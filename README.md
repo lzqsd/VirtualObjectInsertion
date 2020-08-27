@@ -29,7 +29,7 @@ To reproduce the 20 object insertion results from Garon et al. 2019 dataset.
 The program will read the `im_*.mat` files in each `Example*` directory to generate the object insertion results. 
 
 We also provide the code to generate the object insertion code from scratch. The instructions are as follows:
-* Similarly, download the inverse rendering results from this [link](http://cseweb.ucsd.edu/~viscomp/projects/CVPR20InverseIndoor/objectInsertion.ziphttp://cseweb.ucsd.edu/~viscomp/projects/CVPR20InverseIndoor/objectInsertion_test.zip)
+* Similarly, download the inverse rendering results from this [link](http://cseweb.ucsd.edu/~viscomp/projects/CVPR20InverseIndoor/objectInsertion_test.zip)
 * Open `generateXML.m`. On line 4 and 5, enter the path to your renderer and your python program. 
 * Several parameters from  can be used to adjust the object insertion results
   * `meshNewName`: The mesh used for object insertion. We provide two meshes: `sphere.obj` and `bunny.obj`. You can include your own mesh but you may need to scale and rotate the mesh accordingly so that they will look good. 
