@@ -18,11 +18,11 @@ To run our code, you will need
 * Renderer: Please find the renderer from this [link](https://github.com/lzqsd/OptixRenderer), which is an Optix-based renderer implemented for this project.
 
 ## Data 
-Please download the data from the [link](http://cseweb.ucsd.edu/~viscomp/projects/CVPR20InverseIndoor/objectInsertion.ziphttp://cseweb.ucsd.edu/~viscomp/projects/CVPR20InverseIndoor/objectInsertion_test.zip). It includes the inverse rendering predictions of the 20 examples from Garon et al. 2019 dataset (Example 1-20) and 4 examples (demo0-3) downloaded from the Internet. 
+Please download the data from the [link](http://cseweb.ucsd.edu/~viscomp/projects/CVPR20InverseIndoor/objectInsertion.zip). It includes the inverse rendering predictions of the 20 examples from Garon et al. 2019 dataset (Example 1-20) and 4 examples (demo0-3) downloaded from the Internet. 
 
 ## Instructions
 To reproduce the 20 object insertion results from Garon et al. 2019 dataset.
-* Download the inverse rendering predictions from the [link](http://cseweb.ucsd.edu/~viscomp/projects/CVPR20InverseIndoor/objectInsertion.ziphttp://cseweb.ucsd.edu/~viscomp/projects/CVPR20InverseIndoor/objectInsertion_test.zip) mentioned above. Unzip the data in the same directory as the code. 
+* Download the inverse rendering predictions from the [link](http://cseweb.ucsd.edu/~viscomp/projects/CVPR20InverseIndoor/objectInsertion_test.zip) mentioned above. Unzip the data in the same directory as the code. 
 * Open `generateXMLread_ref.m`. On line 3 and 4, write down the path to your renderer and your python program. 
 * Run `generateXMLread_ref.m`
 
